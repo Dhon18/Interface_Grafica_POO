@@ -100,6 +100,11 @@ public class jfCadastro extends javax.swing.JInternalFrame {
         jbCancelar.setText("Cancelar");
 
         jbSair.setText("Sair");
+        jbSair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbSairActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -220,6 +225,11 @@ public class jfCadastro extends javax.swing.JInternalFrame {
     private void JPTelefoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JPTelefoneActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_JPTelefoneActionPerformed
+
+    private void jbSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbSairActionPerformed
+      //Metodo para fechar tela
+        dispose();
+    }//GEN-LAST:event_jbSairActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
